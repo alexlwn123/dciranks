@@ -1,6 +1,6 @@
-import React from "react";
 import { ResponsiveLine } from "@nivo/line";
-import { Performance, Corps } from "../types";
+import type React from "react";
+import type { Corps, Performance } from "../types";
 
 interface ScoreChartProps {
 	performances: Performance[];

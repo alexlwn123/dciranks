@@ -1,7 +1,7 @@
-import React from "react";
-import { Event } from "../types";
-import { Calendar, MapPin, Users, Radio } from "lucide-react";
 import { motion } from "framer-motion";
+import { Calendar, MapPin, Radio, Users } from "lucide-react";
+import type React from "react";
+import type { Event } from "../types";
 
 interface EventCardProps {
 	event: Event;

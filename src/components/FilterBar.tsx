@@ -1,6 +1,6 @@
-import React from "react";
-import { Filter, Search, Calendar, MapPin, Users } from "lucide-react";
-import { Corps, Event, ScoreFilter } from "../types";
+import { Calendar, Filter, MapPin, Search, Users } from "lucide-react";
+import type React from "react";
+import type { Corps, Event, ScoreFilter } from "../types";
 
 interface FilterBarProps {
 	corps: Corps[];

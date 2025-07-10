@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { ArrowLeft, Calendar, Clock, MapPin, Users } from "lucide-react";
+import type React from "react";
+import { useState } from "react";
+import { useScoreData } from "../hooks/useScoreData";
+import type { Event } from "../types";
 import { EventCard } from "./EventCard";
 import { ScoreCard } from "./ScoreCard";
-import { useScoreData } from "../hooks/useScoreData";
-import { Event } from "../types";
-import { ArrowLeft, Calendar, MapPin, Users, Clock } from "lucide-react";
 
 export const EventsView: React.FC = () => {
 	const { events, loading, getCorpsById, getPerformancesByEvent } =

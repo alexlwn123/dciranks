@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Navigation } from "./components/Navigation";
 import { Dashboard } from "./components/Dashboard";
-import { ScoresView } from "./components/ScoresView";
 import { EventsView } from "./components/EventsView";
-import { TrendsView } from "./components/TrendsView";
 import { LiveView } from "./components/LiveView";
+import { Navigation } from "./components/Navigation";
+import { ScoresView } from "./components/ScoresView";
+import { TrendsView } from "./components/TrendsView";
 import { useScoreData } from "./hooks/useScoreData";
 
 function App() {

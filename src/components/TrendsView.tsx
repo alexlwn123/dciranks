@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { ScoreChart } from "./ScoreChart";
+import { Award, Target, TrendingUp, Users } from "lucide-react";
+import type React from "react";
+import { useState } from "react";
 import { useScoreData } from "../hooks/useScoreData";
-import { Corps } from "../types";
-import { TrendingUp, Users, Target, Award } from "lucide-react";
+import type { Corps } from "../types";
+import { ScoreChart } from "./ScoreChart";
 
 export const TrendsView: React.FC = () => {
 	const { corps, performances, loading, getPerformancesByCorps } =

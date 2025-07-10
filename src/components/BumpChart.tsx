@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { ResponsiveBump } from "@nivo/bump";
-import { Performance, Corps, Event } from "../types";
-import { format, eachDayOfInterval, parseISO } from "date-fns";
+import { Bump, ResponsiveBump } from "@nivo/bump";
+import { eachDayOfInterval, format, parseISO } from "date-fns";
+import type React from "react";
+import { useEffect, useState } from "react";
+import type { Corps, Event, Performance } from "../types";
 
 interface BumpChartProps {
 	performances: Performance[];
@@ -137,7 +138,7 @@ export const BumpChart: React.FC<BumpChartProps> = ({
 					className="w-full overflow-x-auto"
 					style={{ height: isMobile ? "700px" : "800px" }}
 				>
-					<ResponsiveBump
+					<Bump
 						data={data}
 						colors={customColors}
 						lineWidth={isMobile ? 3 : 4}

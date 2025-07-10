@@ -1,7 +1,7 @@
-import React from "react";
-import { Performance, Corps, Event } from "../types";
-import { Trophy, Clock, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import { Clock, MapPin, Trophy } from "lucide-react";
+import type React from "react";
+import type { Corps, Event, Performance } from "../types";
 
 interface ScoreCardProps {
 	performance: Performance;

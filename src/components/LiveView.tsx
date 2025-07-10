@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { ScoreCard } from "./ScoreCard";
+import { Clock, Radio, RefreshCw } from "lucide-react";
+import type React from "react";
+import { useEffect, useState } from "react";
 import { useScoreData } from "../hooks/useScoreData";
-import { Radio, Clock, RefreshCw } from "lucide-react";
+import { ScoreCard } from "./ScoreCard";
 
 export const LiveView: React.FC = () => {
 	const { liveEvents, loading, getCorpsById, getPerformancesByEvent } =

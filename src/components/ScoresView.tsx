@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { ScoreCard } from "./ScoreCard";
-import { FilterBar } from "./FilterBar";
+import type React from "react";
+import { useState } from "react";
 import { useScoreData } from "../hooks/useScoreData";
-import { ScoreFilter } from "../types";
+import type { ScoreFilter } from "../types";
+import { FilterBar } from "./FilterBar";
+import { ScoreCard } from "./ScoreCard";
 
 export const ScoresView: React.FC = () => {
 	const {

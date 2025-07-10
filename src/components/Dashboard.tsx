@@ -1,6 +1,6 @@
-import React from "react";
-import { BumpChart } from "./BumpChart";
+import type React from "react";
 import { useScoreData } from "../hooks/useScoreData";
+import { BumpChart } from "./BumpChart";
 
 export const Dashboard: React.FC = () => {
 	const { corps, events, performances, loading } = useScoreData();

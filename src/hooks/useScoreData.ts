@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { Performance, Corps, Event, ScoreFilter } from "../types";
+import { useEffect, useState } from "react";
 import { mockCorps, mockEvents, mockPerformances } from "../data/mockData";
+import type { Corps, Event, Performance, ScoreFilter } from "../types";
 
 export const useScoreData = () => {
 	const [corps, setCorps] = useState<Corps[]>([]);

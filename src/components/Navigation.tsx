@@ -1,5 +1,5 @@
-import React from "react";
-import { Home, Trophy, Calendar, TrendingUp, Radio } from "lucide-react";
+import { Calendar, Home, Radio, TrendingUp, Trophy } from "lucide-react";
+import type React from "react";
 
 interface NavigationProps {
 	activeView: string;
